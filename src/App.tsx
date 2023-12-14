@@ -6,6 +6,7 @@ import AccessibleIcon from '@mui/icons-material/Accessible';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import RestaurantInformationForm from './pages/restaurantInformation/RestaurantInformationForm';
 
 
 
@@ -27,6 +28,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       {/* <Route path="/help" element={<HelpPage/>}/> */}
+      <Route path="/restaurantsetup" element={<RestaurantInformationForm/>}/>
     </Routes>
     </ThemeProvider>
   </BrowserRouter>

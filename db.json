@@ -3,7 +3,9 @@
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode"
+      "author": "typicode",
+      "stars": "5",
+      "sentiment": "80%"
     }
   ],
   "users": [
