@@ -32,7 +32,7 @@ export function DietaryCriteriaForm ({dietaryChips, updateFields}:DietaryCriteri
    : chip ))
    }
     return (
-     <div style={{display:"flex", flexWrap:"wrap", gap:"2rem"}}>
+     <div style={{display:"flex", flexWrap:"wrap", rowGap:"2rem", justifyContent: "space-around"}}>
         {chipData.map((chip) => {
         return (
          
