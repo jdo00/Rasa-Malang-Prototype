@@ -1,9 +1,9 @@
 import Button from "@mui/material/Button";
-import AddAPhotoOutlinedIcon from '@mui/icons-material/AddAPhotoOutlined';
-import { useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useState } from "react";
+import AddAPhotoOutlinedIcon from '@mui/icons-material/AddAPhotoOutlined';
 
-export function MenuUploadForm () {
+export function InteriorImagesForm () {
     const [files, setFiles] = useState<string[]>([])
     const [pictures, setPictures] = useState<FileList | null>();
     const [counter, setCounter] = useState(0)
@@ -108,9 +108,10 @@ export function MenuUploadForm () {
             },
             justifyContent: 'center'}}
             >
-          Upload Menu
+          Upload images
           <input type="file" hidden accept="image/jpeg,image/gif,image/png" name="file" id="file" multiple onChange={handleFileChange}/>
         </Button>
       </div>
     )
+
 }

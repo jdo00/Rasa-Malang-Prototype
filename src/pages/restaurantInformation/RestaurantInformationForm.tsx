@@ -6,6 +6,7 @@ import { ChipData, DietaryCriteriaForm } from "./DietaryCriteriaForm"
 import MobileStepper from "@mui/material/MobileStepper"
 import { OpeningHoursForm } from "./OpeningHoursForm"
 import { MenuUploadForm } from "./MenuUploadForm"
+import { InteriorImagesForm } from "./InteriorImagesForms"
 
 type FormData = {
     restaurantName: string
@@ -45,7 +46,7 @@ export default function RestaurantInformationForm () {
         })
       }
 
-    const {steps, currentStepIndex, step, stepIndex, isFirstStep, back, next, isLastStep } = useMultistepForm([<BasicInformationForm {...data} updateFields={updateFields}/>, <DietaryCriteriaForm {...data} updateFields={updateFields}/>, <OpeningHoursForm/>, <MenuUploadForm/>])
+    const {steps, currentStepIndex, step, stepIndex, isFirstStep, back, next, isLastStep } = useMultistepForm([<MenuUploadForm/>, <BasicInformationForm {...data} updateFields={updateFields}/>, <DietaryCriteriaForm {...data} updateFields={updateFields}/>, <OpeningHoursForm/>, <InteriorImagesForm/>, ])
 
     function onSubmit(e: FormEvent) {
         e.preventDefault()
@@ -57,7 +58,7 @@ export default function RestaurantInformationForm () {
         <form onSubmit={onSubmit} style={{margin:"1rem"}}>
             <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                 <h2>Restaurant Information</h2>
-                <p style={{marginTop:"-1rem"}}>{stepIndex === 0 ? "Set basic Information" : stepIndex === 1 ? "Set culinary criteria your restaurant is meeting " : ""}</p>
+                <p style={{marginTop:"-1rem", textAlign: "center"}}>{stepIndex === 0 ? "Over the next 5 steps set your restaurant information" : stepIndex === 1 ? "Set basic information" : stepIndex === 2 ? "Set culinary criteria your restaurant is meeting": "Upload pictures of the interior of you restaurant"}</p>
             </div>
             <MobileStepper variant="dots" steps={steps.length} position="static" activeStep={currentStepIndex} sx={{ maxWidth: 400, flexGrow: 1, backgroundColor:"#f4efea", justifyContent: "center" }} nextButton={null} backButton={null}/>
 
