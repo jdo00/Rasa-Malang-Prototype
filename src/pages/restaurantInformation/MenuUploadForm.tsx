@@ -44,11 +44,13 @@ export function MenuUploadForm () {
                 <div style={{
                     backgroundColor: 'rgba(185, 185, 185,0.65)',
                     maxWidth: '800px',
-                    width: '80%',
+                    width: '100%',
                     margin: '0px auto 0px',
+                    overflowX: 'auto', 
+                    whiteSpace: 'nowrap',
                     display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    borderRadius: "4px"
 
                 }}>
                     {(files || []).map(file => (
@@ -75,10 +77,11 @@ export function MenuUploadForm () {
                 <div style={{
                     backgroundColor: 'rgba(185, 185, 185,0.65)',
                     maxWidth: '800px',
-                    width: '80%',
+                    width: '100%',
                     margin: '10px auto 0px',
                     display: 'flex',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    borderRadius: "4px"
                 }}>
                     <Button sx={{ width: '100%' }} onClick={handleDeleteSelection}>Delete Images</Button>
                 </div>) :
