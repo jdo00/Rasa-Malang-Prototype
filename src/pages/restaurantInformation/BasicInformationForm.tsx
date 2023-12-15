@@ -37,7 +37,7 @@ export function BasicInformationForm ({
     updateFields,
   }: BasicInformationFormProps) {
     return (
-        <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", rowGap:"1rem"}}>
+        <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", rowGap:"2rem"}}>
         <TextField autoFocus id="restaurantName" label="restaurant name" variant="filled" required  value={restaurantName}
         onChange={e => updateFields({ restaurantName: e.target.value })}/>
 

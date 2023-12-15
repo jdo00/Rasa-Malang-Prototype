@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react"
 import {BasicInformationForm} from "./BasicInformationForm"
 import { ChipData, DietaryCriteriaForm } from "./DietaryCriteriaForm"
 import MobileStepper from "@mui/material/MobileStepper"
+import { OpeningHoursForm } from "./OpeningHoursForm"
 
 type FormData = {
     restaurantName: string
@@ -43,7 +44,7 @@ export default function RestaurantInformationForm () {
         })
       }
 
-    const {steps, currentStepIndex, step, stepIndex, isFirstStep, back, next, isLastStep } = useMultistepForm([<BasicInformationForm {...data} updateFields={updateFields}/>, <DietaryCriteriaForm {...data} updateFields={updateFields}/>])
+    const {steps, currentStepIndex, step, stepIndex, isFirstStep, back, next, isLastStep } = useMultistepForm([<BasicInformationForm {...data} updateFields={updateFields}/>, <DietaryCriteriaForm {...data} updateFields={updateFields}/>, <OpeningHoursForm/>])
 
     function onSubmit(e: FormEvent) {
         e.preventDefault()
@@ -62,8 +63,8 @@ export default function RestaurantInformationForm () {
             {step}
 
             <div style={{marginTop: "2rem", display:"flex", justifyContent:"space-around"}}>
-            {<Button style={{margin: isLastStep ? "0" : "auto" }} variant="contained" type ="submit">{!isLastStep? "GO TO NEXT STEP" : "Finish"}</Button>}
             {!isFirstStep && <Button type ="button" variant="outlined" onClick = {back}>GO BACK</Button>}
+            {<Button style={{margin: isLastStep ? "0" : "auto" }} variant="contained" type ="submit">{!isLastStep? "GO TO NEXT STEP" : "Finish"}</Button>}
             </div>
         </form>
     )
