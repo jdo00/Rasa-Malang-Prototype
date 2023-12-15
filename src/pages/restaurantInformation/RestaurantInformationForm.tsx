@@ -5,6 +5,7 @@ import {BasicInformationForm} from "./BasicInformationForm"
 import { ChipData, DietaryCriteriaForm } from "./DietaryCriteriaForm"
 import MobileStepper from "@mui/material/MobileStepper"
 import { OpeningHoursForm } from "./OpeningHoursForm"
+import { MenuUploadForm } from "./MenuUploadForm"
 
 type FormData = {
     restaurantName: string
@@ -44,7 +45,7 @@ export default function RestaurantInformationForm () {
         })
       }
 
-    const {steps, currentStepIndex, step, stepIndex, isFirstStep, back, next, isLastStep } = useMultistepForm([<BasicInformationForm {...data} updateFields={updateFields}/>, <DietaryCriteriaForm {...data} updateFields={updateFields}/>, <OpeningHoursForm/>])
+    const {steps, currentStepIndex, step, stepIndex, isFirstStep, back, next, isLastStep } = useMultistepForm([<BasicInformationForm {...data} updateFields={updateFields}/>, <DietaryCriteriaForm {...data} updateFields={updateFields}/>, <OpeningHoursForm/>, <MenuUploadForm/>])
 
     function onSubmit(e: FormEvent) {
         e.preventDefault()
