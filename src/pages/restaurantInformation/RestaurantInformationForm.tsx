@@ -58,15 +58,15 @@ export default function RestaurantInformationForm () {
         <form onSubmit={onSubmit} style={{margin:"1rem"}}>
             <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                 <h2>Restaurant Information</h2>
-                <p style={{marginTop:"-1rem", textAlign: "center"}}>{stepIndex === 0 ? "Over the next 5 steps set your restaurant information" : stepIndex === 1 ? "Set basic information" : stepIndex === 2 ? "Set culinary criteria your restaurant is meeting": "Upload pictures of the interior of you restaurant"}</p>
+                <p style={{marginTop:"-1rem", textAlign: "center"}}>{stepIndex === 0 ? "Set up your restaurant info in 5 steps" : stepIndex === 1 ? "Set basic information" : stepIndex === 2 ? "Set culinary criteria your restaurant is meeting": "Upload pictures of the interior of you restaurant"}</p>
             </div>
             <MobileStepper variant="dots" steps={steps.length} position="static" activeStep={currentStepIndex} sx={{ maxWidth: 400, flexGrow: 1, backgroundColor:"#f4efea", justifyContent: "center" }} nextButton={null} backButton={null}/>
-
+            <div style={{minHeight:"600px"}}>
             {step}
-
-            <div style={{marginTop: "2rem", display:"flex", justifyContent:"space-around"}}>
+            </div>
+            <div style={{marginTop: "2rem", display:"flex", justifyContent:"space-around" }}>
             {!isFirstStep && <Button type ="button" variant="outlined" onClick = {back}>GO BACK</Button>}
-            {<Button style={{margin: isLastStep ? "0" : "auto" }} variant="contained" type ="submit">{!isLastStep? "GO TO NEXT STEP" : "Finish"}</Button>}
+            {<Button style={{margin:"0" }} variant="contained" type ="submit">{!isLastStep? "Next" : "Finish"}</Button>}
             </div>
         </form>
     )
