@@ -7,6 +7,7 @@ import MobileStepper from "@mui/material/MobileStepper"
 import { OpeningHoursForm } from "./OpeningHoursForm"
 import { MenuUploadForm } from "./MenuUploadForm"
 import { InteriorImagesForm } from "./InteriorImagesForms"
+import { useNavigate } from "react-router-dom"
 
 type FormData = {
     restaurantName: string
@@ -38,6 +39,8 @@ type FormData = {
 
 export default function RestaurantInformationForm () {
 
+    const navigate = useNavigate();
+
     const [data, setData] = useState(INITIAL_DATA)
 
     function updateFields(fields: Partial<FormData>) {
@@ -51,7 +54,7 @@ export default function RestaurantInformationForm () {
     function onSubmit(e: FormEvent) {
         e.preventDefault()
         if (!isLastStep) return next()
-        alert("Successful Your Restaurant Information is set")
+        navigate("/restaurantsetupcompleted");
     }
 
     return (

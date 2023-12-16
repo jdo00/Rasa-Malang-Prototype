@@ -7,6 +7,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import RestaurantInformationForm from './pages/restaurantInformation/RestaurantInformationForm';
+import { RestaurantInfoCompleted } from './pages/restaurantInformation/RestaurantInfoCompleted';
+import RestaurantHomePage from './pages/RestaurantHomePage';
 
 
 
@@ -27,8 +29,10 @@ function App() {
     <ThemeProvider theme={theme}>
     <Routes>
       <Route path="/" element={<HomePage/>}/>
+      <Route path="/restaurant" element={<RestaurantHomePage/>}/>
       {/* <Route path="/help" element={<HelpPage/>}/> */}
       <Route path="/restaurantsetup" element={<RestaurantInformationForm/>}/>
+      <Route path="/restaurantsetupcompleted" element={<RestaurantInfoCompleted/>}/>
     </Routes>
     </ThemeProvider>
   </BrowserRouter>
