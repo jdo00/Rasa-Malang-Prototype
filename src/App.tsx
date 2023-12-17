@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import RestaurantInformationForm from './pages/restaurantInformation/RestaurantInformationForm';
 import { RestaurantInfoCompleted } from './pages/restaurantInformation/RestaurantInfoCompleted';
 import RestaurantHomePage from './pages/RestaurantHomePage';
+import { ItineraryInsights } from './pages/restaurantInformation/RestaurantItineraryInsights';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       {/* <Route path="/help" element={<HelpPage/>}/> */}
       <Route path="/restaurantsetup" element={<RestaurantInformationForm/>}/>
       <Route path="/restaurantsetupcompleted" element={<RestaurantInfoCompleted/>}/>
+      <Route path="/itineraryinsights" element={<ItineraryInsights/>}/>
     </Routes>
     </ThemeProvider>
   </BrowserRouter>
