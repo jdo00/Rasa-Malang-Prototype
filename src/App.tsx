@@ -10,6 +10,7 @@ import RestaurantInformationForm from './pages/restaurantInformation/RestaurantI
 import { RestaurantInfoCompleted } from './pages/restaurantInformation/RestaurantInfoCompleted';
 import RestaurantHomePage from './pages/RestaurantHomePage';
 import { ItineraryInsights } from './pages/restaurantInformation/RestaurantItineraryInsights';
+import { CreateItineraryPage } from './pages/createItinerary/CreateItineraryPage';
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <Route path="/restaurantsetup" element={<RestaurantInformationForm/>}/>
       <Route path="/restaurantsetupcompleted" element={<RestaurantInfoCompleted/>}/>
       <Route path="/itineraryinsights" element={<ItineraryInsights/>}/>
+      <Route path="/createitinerary" element={<CreateItineraryPage/>}/>
     </Routes>
     </ThemeProvider>
   </BrowserRouter>

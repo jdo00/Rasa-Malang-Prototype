@@ -89,7 +89,7 @@ export const AppBarDrawer = (props: { open: boolean, setOpenDrawer(): void , isR
                 break;
             }
             case 1: {
-                navigate("/")
+                navigate("/createitinerary")
                 break;
             }
             case 2: {
