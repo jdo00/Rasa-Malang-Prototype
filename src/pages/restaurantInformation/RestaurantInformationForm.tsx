@@ -61,7 +61,7 @@ export default function RestaurantInformationForm () {
         <form onSubmit={onSubmit} style={{margin:"1rem"}}>
             <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                 <h2>Restaurant Information</h2>
-                <p style={{marginTop:"-1rem", textAlign: "center"}}>{stepIndex === 0 ? "Set up your restaurant info in 5 steps" : stepIndex === 1 ? "Set basic information" : stepIndex === 2 ? "Set culinary criteria your restaurant is meeting": "Upload pictures of the interior of you restaurant"}</p>
+                <p style={{marginTop:"-1rem", textAlign: "center"}}>{stepIndex === 0 ? "Set up your restaurant info in 5 steps" : stepIndex === 1 ? "Set basic information" : stepIndex === 2 ? "Set culinary criteria your restaurant is meeting": stepIndex===3 ? "Set your opening hours": "Upload pictures of the interior of you restaurant"}</p>
             </div>
             <MobileStepper variant="dots" steps={steps.length} position="static" activeStep={currentStepIndex} sx={{ maxWidth: 400, flexGrow: 1, backgroundColor:"#f4efea", justifyContent: "center" }} nextButton={null} backButton={null}/>
             <div style={{minHeight:"600px"}}>
