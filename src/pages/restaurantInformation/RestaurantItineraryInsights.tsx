@@ -22,6 +22,7 @@ export function ItineraryInsights () {
              series={[
              {
                 data: [suggestedAmmount, selectedAmmount],
+                color: "#C00000"
                 },
             ]}
             width={350}

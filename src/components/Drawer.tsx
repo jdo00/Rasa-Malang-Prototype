@@ -65,7 +65,7 @@ export const AppBarDrawer = (props: { open: boolean, setOpenDrawer(): void , isR
     const navigateToRestaurant = async (index: number) => {
         switch (index) {
             case 0: {
-                navigate("/")
+                navigate("/restaurant")
                 break;
             }
             case 1: {
