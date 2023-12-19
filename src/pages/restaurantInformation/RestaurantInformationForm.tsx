@@ -31,7 +31,7 @@ type FormData = {
         { key: 1, label: 'Vegan' , focused: false },
         { key: 2, label: 'Kosher' , focused: false },
         { key: 3, label: 'Pork-free' , focused: false },
-        { key: 4, label: 'Lactose-free', focused: false  },
+        { key: 4, label: 'Poultry', focused: false  },
         { key: 5, label: 'Gluten-free' , focused: false },
         { key: 6, label: 'Halal' , focused: false },
       ]

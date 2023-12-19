@@ -14,28 +14,28 @@ export interface SimpleDialogProps {
 
   const reviews = [
     {
-      title: 'Bestes Lippenmasken-Duo!',
-      text: 'This is 💯 one hundred percent the best lip mask duo ever !!! The scent is delicious and it’s so smooth from the scrub & mask ~ This is perfection~ Smells just like honey 🍯 & the packaging is so adorable ~ I’m so very happy with this product 🐻 🍯 ~',
-      rating: 5,
-    },
-    {
-      title: 'Hervorragende Essenserfahrung!',
-      text: 'Absolutely thrilled with this dining experience! 🌟 The ambiance was delightful, and the attention to detail was impeccable. The menu presented a perfect duo, much like the best lip mask set ever. Each dish was a flavorful journey, just like the delicious scent of honey in the lip mask. The smooth transition from the appetizer (scrub)',
+      title: 'makanan yang sangat lezat',
+      text: 'Salah satu comfort food kalo udah gak tau mau makan apa lagi. Rasanya oke, harga lumayan murah, dan porsinya bikin kenyang meskipun tanpa additional nasi karena dari steaknya sendiri udah include sama kentanganya. Pelayanannya lumayan cepet dan stafnya juga ramah bgt. Tempatnya lumayan luas dan bersihhhhhh n rapi bgt. Minusnya di outlet ini pembayarannya cash only, gabisa pake qris:”',
       rating: 4,
     },
     {
-      title: 'Fantastische Hautpflege!',
-      text: 'I am in love with this skincare routine! The products are gentle yet effective. My skin feels so refreshed and hydrated. The packaging is also eco-friendly, which is a big plus for me. I highly recommend this skincare line!',
-      rating: 4,
-    },
-    {
-      title: 'Perfekter Sommerduft!',
-      text: 'The fragrance of this summer perfume is absolutely divine. It\'s like a burst of sunshine in a bottle. The notes are well-balanced, and the longevity is impressive. I receive compliments every time I wear it. A must-have for any perfume enthusiast!',
+      title: 'Sangat populer di kalangan wanita muda',
+      text: 'Tempat yg cukup populer apalagi di kalangan sista2 yah.. steak harga murah bersahabat tp kualitas rasa jg oke. Tempatnya nyaman dan luas, ada lantai 2 juga top deh. Pelayanan cepat sat set tempatnya jg bersih. Tp maaf menurutku es tehnya kemanisan sampe aku tambahin air lagi. Dan agak kecewa karena beli air minum harga 5.5k yg datang malah air minum prim* ku kira harga segitu minimal aqu* lah yaa :((',
       rating: 5,
     },
     {
-      title: 'Stilvolles Accessoire!',
-      text: 'This accessory is the perfect addition to my wardrobe. The craftsmanship is exceptional, and it adds a touch of elegance to any outfit. The versatility of this piece makes it a staple in my collection. I couldn\'t be happier with my purchase!',
+      title: 'Biaya dibawa pulang',
+      text: 'Enak aja, worth untuk harga dan rasa👍 tempat nya juga luas. Pelayanan ramah dan bagus, mesen untuk dibungkus pelayanannya cepat. Untuk take away kena charge 1,000 tapi ada tukang parkirnya gais',
+      rating: 4,
+    },
+    {
+      title: 'Enak',
+      text: 'Outlet disini sama luasnya tempat makannya seperti di Mall Dinoyo City hanya saja yang membedakan sausnya lebih banyak disana sedangkan jagung kentang lebih besar banyak disini. Ukuran steaknya dan rasa masih tetap sama kok 🤭',
+      rating: 5,
+    },
+    {
+      title: 'Tolong lebih banyak saus',
+      text: 'Rasa steaknya lumayan, tersedia 2 pilihan daging, steak daging ayam dan sapi, harganya pun murah meriah. Cuma untuk yang sapi agak alot dikit. Suasana nya enak, dan santai. Cuma lantai 2 lampunya agak suram. Saran : next untuk saus bisa diberikan beberapa alternatif. Seperti saus lada hitam, saus keju dll',
       rating: 4,
     },
   ];
@@ -56,7 +56,7 @@ export function ReviewsDialog (props: SimpleDialogProps) {
           },
         },
       }}>
-      <DialogTitle>Deteailed reviews</DialogTitle>
+      <DialogTitle>Detailed reviews</DialogTitle>
       <List sx={{ pt: 0 , padding:"1rem"}}>
       {reviews.map((review, index) => (
           <ListItem disableGutters key={index}>

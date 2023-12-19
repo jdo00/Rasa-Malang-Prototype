@@ -5,14 +5,9 @@ import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import React from "react";
 
-{/*export enum PaymentOptions {
-    CASH = "cash",
-    CARD = "card",
-    PAYPAL = "paypal"
-} */}
 const PaymentOptions = [
     'cash',
-    'card',
+    'scan',
     'paypal'
 ]
 type BasicInformationData = {
@@ -56,7 +51,7 @@ export function BasicInformationForm ({
           onChange={e => updateFields({ paymentOptions: e.target.value as string []})}
         >
           <MenuItem value={PaymentOptions[0]}>cash</MenuItem>
-          <MenuItem value={PaymentOptions[1]}>card</MenuItem>
+          <MenuItem value={PaymentOptions[1]}>scan</MenuItem>
           <MenuItem value={PaymentOptions[2]}>paypal</MenuItem>
         </Select>
         </FormControl>
