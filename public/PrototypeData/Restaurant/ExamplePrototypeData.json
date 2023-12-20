@@ -15,7 +15,7 @@
         "ClosestLocation": "CulturalCenterOfEastJava",
         "EstablishmentType": "Eatery",
         "CuisineType": "['Indonesian', 'Western']",
-        "CulinaryCriteria": "['Halal', 'Poultry']",
+        "CulinaryCriteria": "['Halal', 'Kosher', 'Pork-free', 'Lactose-free']",
         "Menu": "Steak_Moen-Moen/Menu/",
         "Interior": "Steak_Moen-Moen/Interior/",
         "OpeningHours": {
@@ -77,7 +77,7 @@
         "ClosestLocation": "BrawijayaMuseum",
         "EstablishmentType": "Cafe",
         "CuisineType": "['Indonesian']",
-        "CulinaryCriteria": "['Sweet', 'Gluten']",
+        "CulinaryCriteria": "['Halal', 'Kosher', 'Vegetarian', 'Pork-free']",
         "Menu": "AL_MUBAROK_Jagung_Bakar/Menu/",
         "Interior": "AL_MUBAROK_Jagung_Bakar/Interior/",
         "OpeningHours": {
@@ -139,7 +139,7 @@
         "ClosestLocation": "BrawijayaMuseum",
         "EstablishmentType": "Stall",
         "CuisineType": "['Snack', 'Beverage']",
-        "CulinaryCriteria": "['Pork']",
+        "CulinaryCriteria": "['Lactose-free']",
         "Menu": "Bakwan_Subur_cabang_Panderman/Menu/",
         "Interior": "Bakwan_Subur_cabang_Panderman/Interior/",
         "OpeningHours": {
