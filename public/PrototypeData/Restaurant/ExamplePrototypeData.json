@@ -1,0 +1,192 @@
+[
+  {
+    "restaurants": [
+      {
+        "RestaurantID": 101,
+        "RestaurantName": "Steak Moen-Moen",
+        "URL": "https://www.google.com/maps/place/Steak+Moen-Moen/@-7.9412513,112.6283851,17z/data=!4m6!3m5!1s0x2dd629c44123cc3f:0x444e9bd3ed00e8cb!8m2!3d-7.9412513!4d112.6283851!16s%2Fg%2F11gj197lbj?entry=ttu",
+        "Coordinates": "[-7.9412513, 112.6283851]",
+        "Address": "Jl. Terusan Candi Mendut No. 36",
+        "Ward": "Mojolangu",
+        "Subdistrict": "Lowokwaru",
+        "PostalCode": 65142,
+        "PhoneNumber": "+6281239373355'",
+        "Payment": "['cash', 'scan']",
+        "ClosestLocation": "CulturalCenterOfEastJava",
+        "EstablishmentType": "Eatery",
+        "CuisineType": "['Indonesian', 'Western']",
+        "CulinaryCriteria": "['Halal', 'Poultry']",
+        "Menu": "Steak_Moen-Moen/Menu/",
+        "Interior": "Steak_Moen-Moen/Interior/",
+        "OpeningHours": {
+          "Monday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          },
+          "Tuesday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          },
+          "Wednesday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          },
+          "Thursday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          },
+          "Friday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          },
+          "Saturday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          },
+          "Sunday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 2100
+          }
+        },
+        "AverageRating": 4.234323432,
+        "NumRatings": 2752,
+        "StarRatings": "{5: 1628, 4: 715, 3: 222, 2: 85, 1: 102}",
+        "Keywords": "['steaks', 'cheapest', 'instagrammable', 'milkshake', 'crispy']",
+        "AverageSentiment": 0.9746,
+        "LowestSentiment": 0.5073,
+        "PositiveReviews": "73.71%"
+      },
+      {
+        "RestaurantID": 102,
+        "RestaurantName": "AL MUBAROK Jagung Bakar",
+        "URL": "https://www.google.com/maps/place/AL+MUBAROK+Jagung+Bakar/@-7.9730082,112.6144165,17z/data=!3m1!4b1!4m6!3m5!1s0x2e78829d283978d3:0xac2aba1ccb3b0e74!8m2!3d-7.9730135!4d112.6169914!16s%2Fg%2F11g03mz64f?entry=ttu",
+        "Coordinates": "[-7.9730135, 112.6169914]",
+        "Address": "Jl. Rajekwesi No. 9",
+        "Ward": "Gading Kasri",
+        "Subdistrict": "Klojen",
+        "PostalCode": 65115,
+        "PhoneNumber": "+6281358489012'",
+        "Payment": "['cash', 'scan']",
+        "ClosestLocation": "BrawijayaMuseum",
+        "EstablishmentType": "Cafe",
+        "CuisineType": "['Indonesian']",
+        "CulinaryCriteria": "['Sweet', 'Gluten']",
+        "Menu": "AL_MUBAROK_Jagung_Bakar/Menu/",
+        "Interior": "AL_MUBAROK_Jagung_Bakar/Interior/",
+        "OpeningHours": {
+          "Monday": {
+            "Open": true,
+            "OpenTime": 1700,
+            "CloseTime": 2359
+          },
+          "Tuesday": {
+            "Open": true,
+            "OpenTime": 1700,
+            "CloseTime": 2359
+          },
+          "Wednesday": {
+            "Open": true,
+            "OpenTime": 1700,
+            "CloseTime": 2359
+          },
+          "Thursday": {
+            "Open": true,
+            "OpenTime": 1700,
+            "CloseTime": 2359
+          },
+          "Friday": {
+            "Open": true,
+            "OpenTime": 1700,
+            "CloseTime": 2359
+          },
+          "Saturday": {
+            "Open": true,
+            "OpenTime": 1700,
+            "CloseTime": 2359
+          },
+          "Sunday": {
+            "Open": false,
+            "OpenTime": 0,
+            "CloseTime": 0
+          }
+        },
+        "AverageRating": 4.2,
+        "NumRatings": 55,
+        "StarRatings": "{5: 24, 4: 21, 3: 8, 2: 1, 1: 1}",
+        "Keywords": "['bananas', 'coffee', 'corn', 'cheese', 'jumbo']",
+        "AverageSentiment": 0.963,
+        "LowestSentiment": 0.5173,
+        "PositiveReviews": "86.25%"
+      },
+      {
+        "RestaurantID": 103,
+        "RestaurantName": "Bakwan Subur cabang Panderman",
+        "URL": "https://www.google.com/maps/place/Bakwan+Subur+cabang+Panderman/@-7.9735286,112.6177694,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd629011df2bba7:0xe6a93adeb5269b1e!8m2!3d-7.9735339!4d112.6203443!16s%2Fg%2F11h4zkxhgk?entry=ttu",
+        "Coordinates": "[-7.9735339, 112.6203443]",
+        "Address": "Jl. Panderman No. 22",
+        "Ward": "Gading Kasri",
+        "Subdistrict": "Klojen",
+        "PostalCode": 65115,
+        "PhoneNumber": "+6281358489012'",
+        "Payment": "['cash', 'scan']",
+        "ClosestLocation": "BrawijayaMuseum",
+        "EstablishmentType": "Stall",
+        "CuisineType": "['Snack', 'Beverage']",
+        "CulinaryCriteria": "['Pork']",
+        "Menu": "Bakwan_Subur_cabang_Panderman/Menu/",
+        "Interior": "Bakwan_Subur_cabang_Panderman/Interior/",
+        "OpeningHours": {
+          "Monday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          },
+          "Tuesday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          },
+          "Wednesday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          },
+          "Thursday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          },
+          "Friday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          },
+          "Saturday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          },
+          "Sunday": {
+            "Open": true,
+            "OpenTime": 1000,
+            "CloseTime": 1500
+          }
+        },
+        "AverageRating": 4.357142857,
+        "NumRatings": 251,
+        "StarRatings": "{5: 147, 4: 79, 3: 17, 2: 3, 1: 5}",
+        "Keywords": "['pork', 'tasty', 'meatballs', 'flavor', 'sauce']",
+        "AverageSentiment": 0.9602,
+        "LowestSentiment": 0.5791,
+        "PositiveReviews": "68.75%"
+      }
+    ]
+  }
+]
