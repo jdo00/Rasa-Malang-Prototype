@@ -1,0 +1,46 @@
+[
+  {
+    "attractions": [
+      {
+        "AttractionID": 1,
+        "AttractionName": "Brawijaya Museum",
+        "Coordinates": [-7.9721325, 112.621209],
+        "Address": "Jl. Ijen No. 25A",
+        "Ward": "Gading Kasri",
+        "Subdistrict": "Klojen",
+        "PostalCode": "65515",
+        "Photo": "Brawijaya_Museum/"
+      },
+      {
+        "AttractionID": 2,
+        "AttractionName": "Colorful Village",
+        "Coordinates": [-7.9827122, 112.6377992],
+        "Address": "Jl. Ir. H. Juanda No. 9",
+        "Ward": "Jodipan",
+        "Subdistrict": "Blimbing",
+        "PostalCode": "65137",
+        "Photo": "Colorful_Village/"
+      },
+      {
+        "AttractionID": 3,
+        "AttractionName": "Cultural Center of East Java",
+        "Coordinates": [-7.9426232, 112.6225314],
+        "Address": "Jl. Soekarno Hatta No.7",
+        "Ward": "Jatimulyo",
+        "Subdistrict": "Lowokwaru",
+        "PostalCode": "65142",
+        "Photo": "Cultural_Center_of_East_Java/"
+      },
+      {
+        "AttractionID": 4,
+        "AttractionName": "Malang Night Paradise",
+        "Coordinates": [-7.9235099, 112.6580123],
+        "Address": "Jl. Graha Kencana Raya",
+        "Ward": "Balearjosari",
+        "Subdistrict": "Blimbing",
+        "PostalCode": "65126",
+        "Photo": "Malang_Night_Paradise/"
+      }
+    ]
+  }
+]
