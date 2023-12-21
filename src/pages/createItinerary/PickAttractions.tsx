@@ -27,7 +27,7 @@ export function PickAttractions ({attractionsIDs, updateFields}: PickAttractions
         {
           id: 2,
           image: '/attractions/CulturCenter.jpeg',
-          title: 'Cultur center',
+          title: 'Cultural Center Of East Java',
         },
         {
           id: 3,

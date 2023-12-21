@@ -9,6 +9,7 @@ import Button from "@mui/material/Button"
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useEffect, useState } from "react"
+import { RestaurantProfileDialog } from "../../components/RestaurantProfileDialog"
 
 interface OpeningHours {
     [day: string]: {
@@ -81,6 +82,15 @@ export function SelectRestaurants (props:{AttractionId: number, AttractionNr: nu
 const [restaurantsData, setRestaurantsData] = useState(null);
 const [selectedRestaurants, setSelectedRestaurants] = useState<number[]>([]);
 const matchingRestaurants: Restaurant[] | undefined = getRestaurantsByAttractionId(props.AttractionId, attractions, restaurantsData);
+const [open, setOpen] = useState(false);
+
+const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+const handleClose = () => {
+    setOpen(false);
+  };
 
 useEffect(() => {
   const fetchData = async () => {
@@ -124,8 +134,8 @@ const toggleAttractionSelection = (restaurantId: number) => {
   
     // Restaurants mit der passenden ClosestLocation
     const matchingRestaurants = restaurantsData?.flatMap((data) =>
-    data.restaurants.filter((restaurant) => restaurant.ClosestLocation === attractionTitle)
-  );
+    data.restaurants.filter((restaurant) => restaurant.ClosestLocation === attractionTitle));
+    matchingRestaurants?.map((res)=>console.log(res.OpeningHours))
   return matchingRestaurants;
   }
 
@@ -146,7 +156,7 @@ const toggleAttractionSelection = (restaurantId: number) => {
           </CardContent>
           <CardActions sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
   {/* Button "View Profile" auf der linken Seite */}
-  <Button size="small" >
+  <Button size="small" onClick={handleClickOpen} >
     View Profile
   </Button>
 
@@ -164,6 +174,7 @@ const toggleAttractionSelection = (restaurantId: number) => {
         </Card>
       ))}
     </div>
+    <RestaurantProfileDialog open={open} onClose={handleClose}/>
     </div>
         </Scaffold> 
 

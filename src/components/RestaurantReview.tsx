@@ -6,9 +6,9 @@ import { PictureSlide } from "./PictureSlide";
 
 
 export function RestaurantReview () {
-    const imageSources = ['/Steak_Moen_Moen/MoenMoenFront.jpg', '/Steak_Moen_Moen/MoenMoenInside.jpg'];
+    const imageSources = ['/Steak_Moen_Moen/MoenMoenFront.jpg', '/Steak_Moen_Moen/MoenMoenInside.jpg', '/PrototypeData/Restaurant/Steak_Moen-Moen/Menu/Menu1.jpg','/PrototypeData/Restaurant/Steak_Moen-Moen/Menu/Menu2.jpg'];
     return (
-        <>
+       <div style={{padding:"1rem"}}>
         {/*<img src="/Steak_Moen_Moen/MoenMoenFront.jpg" alt="test" width={"358px"} height={"220px"}/>*/}
         <PictureSlide imageSources={imageSources} />
         <h2>Steak Moen-Moen</h2>
@@ -78,6 +78,6 @@ export function RestaurantReview () {
         } />
         */} 
         </div>
-        </>
+        </div>
     )
 } 
