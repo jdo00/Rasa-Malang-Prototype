@@ -6,6 +6,7 @@ import { FormEvent, useState } from "react";
 import { PickAttractions } from "./PickAttractions";
 import { SetPreferences } from "./SetPreferences";
 import { SelectRestaurants } from "./SelectRestaurants";
+import { useNavigate } from "react-router-dom";
 
 type ItineraryData = {
     attractionsIDs: number[]
@@ -26,7 +27,7 @@ const INITIAL_DATA: ItineraryData = {
 export function CreateItineraryPage () {
 
     const [data, setData] = useState(INITIAL_DATA)
-
+    const navigate = useNavigate();
 
     function updateFields(fields: Partial<ItineraryData>) {
         setData(prev => {
@@ -39,7 +40,8 @@ export function CreateItineraryPage () {
 
     function onSubmit(e: FormEvent) {
         e.preventDefault()
-        if (!isLastStep) return next()
+        if (!isLastStep) return next();
+        navigate("/itinerarycreated");
     }
     return (
 

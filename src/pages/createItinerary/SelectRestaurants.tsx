@@ -134,8 +134,8 @@ const toggleAttractionSelection = (restaurantId: number) => {
         <Scaffold header= {<Header isRestaurant={false}/>}>
         <div style={{marginTop:"5rem"}}>
         <h2 style={{ fontSize: "1em", marginBottom: "1rem" }}>Create itinerary<span style={{ fontSize: "0.8em" }}>- select restaurants</span> </h2>
-        <h2>Stop nr. {props.AttractionNr+1} {getAttractionTitleById(props.AttractionId)}</h2>
-        <div style={{ display: 'flex', flexDirection:"column", justifyContent: 'space-around', marginTop: '20px' }}>
+        <h2 style={{marginBottom: "0"}}>Stop nr. {props.AttractionNr+1} {getAttractionTitleById(props.AttractionId)}</h2>
+        <div style={{ display: 'flex', flexDirection:"column", justifyContent: 'space-around'}}>
       {matchingRestaurants?.map((restaurant) => (
         <Card key={restaurant.RestaurantID} sx={{ maxWidth: 345 , marginTop: restaurant.RestaurantID !== 1 ? "2rem" : "0", backgroundColor:"#e6e2dd"}}>
           <CardMedia sx={{ height: 120 }} image={restaurant.Interior} title={restaurant.RestaurantName} />
@@ -144,17 +144,23 @@ const toggleAttractionSelection = (restaurantId: number) => {
               {restaurant.RestaurantName}
             </Typography>
           </CardContent>
-          <CardActions sx={{ justifyContent: 'flex-end', alignItems: 'flex-end' }}>
-            {selectedRestaurants.includes(restaurant.RestaurantID) ? (
-              <Button size="small" endIcon={<DeleteIcon />} onClick={() => toggleAttractionSelection(restaurant.RestaurantID)}>
-                Delete
-              </Button>
-            ) : (
-              <Button size="small" endIcon={<AddCircleOutlineIcon />} onClick={() => toggleAttractionSelection(restaurant.RestaurantID)}>
-                Select
-              </Button>
-            )}
-          </CardActions>
+          <CardActions sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+  {/* Button "View Profile" auf der linken Seite */}
+  <Button size="small" >
+    View Profile
+  </Button>
+
+  {/* Button "Select" oder "Delete" auf der rechten Seite */}
+  {selectedRestaurants.includes(restaurant.RestaurantID) ? (
+    <Button size="small" endIcon={<DeleteIcon />} onClick={() => toggleAttractionSelection(restaurant.RestaurantID)}>
+      Delete
+    </Button>
+  ) : (
+    <Button size="small" endIcon={<AddCircleOutlineIcon />} onClick={() => toggleAttractionSelection(restaurant.RestaurantID)}>
+      Select
+    </Button>
+  )}
+</CardActions>
         </Card>
       ))}
     </div>
