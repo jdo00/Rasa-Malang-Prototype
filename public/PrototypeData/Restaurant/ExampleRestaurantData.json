@@ -12,12 +12,12 @@
         "PostalCode": "65142",
         "PhoneNumber": "+6281239373355",
         "Payment": ["cash", "scan"],
-        "ClosestLocation": "CulturalCenterOfEastJava",
+        "ClosestLocation": "Cultural Center Of East Java",
         "EstablishmentType": "Eatery",
         "CuisineType": ["Indonesian", "Western"],
         "CulinaryCriteria": ["Halal", "Kosher", "Pork-free", "Lactose-free"],
         "Menu": "Steak_Moen-Moen/Menu/",
-        "Interior": "Steak_Moen-Moen/Interior/",
+        "Interior": "/PrototypeData/Restaurant/Steak_Moen-Moen/Interior/mainPic.jpg",
         "OpeningHours": {
           "Monday": {
             "Open": true,
@@ -74,12 +74,12 @@
         "PostalCode": "65115",
         "PhoneNumber": "+6281358489012",
         "Payment": ["cash", "scan"],
-        "ClosestLocation": "BrawijayaMuseum",
+        "ClosestLocation": "Brawijaya Museum",
         "EstablishmentType": "Cafe",
         "CuisineType": ["Indonesian"],
         "CulinaryCriteria": ["Halal", "Kosher", "Vegetarian", "Pork-free"],
         "Menu": "AL_MUBAROK_Jagung_Bakar/Menu/",
-        "Interior": "AL_MUBAROK_Jagung_Bakar/Interior/",
+        "Interior": "/PrototypeData/Restaurant/AL_MUBAROK_Jagung_Bakar/Interior/mainPic.jpg",
         "OpeningHours": {
           "Monday": {
             "Open": true,
@@ -136,12 +136,12 @@
         "PostalCode": "65115",
         "PhoneNumber": "+6281358489012",
         "Payment": ["cash", "scan"],
-        "ClosestLocation": "BrawijayaMuseum",
+        "ClosestLocation": "Brawijaya Museum",
         "EstablishmentType": "Stall",
         "CuisineType": ["Snack", "Beverage"],
         "CulinaryCriteria": ["Lactose-free"],
         "Menu": "Bakwan_Subur_cabang_Panderman/Menu/",
-        "Interior": "Bakwan_Subur_cabang_Panderman/Interior/",
+        "Interior": "/PrototypeData/Restaurant/Bakwan_Subur_cabang_Panderman/Interior/mainPic.jpeg",
         "OpeningHours": {
           "Monday": {
             "Open": true,

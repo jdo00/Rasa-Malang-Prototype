@@ -17,7 +17,7 @@ export function RestaurantReview () {
              yAxis={[{ scaleType: 'band', data: [5,4,3,2,1]}]}
              series={[
              {
-                data: [40, 50, 10, 3, 1],
+                data: [1628, 715, 222, 85, 102],
                 color: "#C00000"
                 },
             ]}
@@ -37,9 +37,9 @@ export function RestaurantReview () {
             <p>4.23</p>
             <StarIcon color="primary"/>
             </div>
-            <p style={{fontSize:"x-small", marginTop:"0"}}>104 reviews</p>
+            <p style={{fontSize:"x-small", marginTop:"0"}}>2752 reviews</p>
         </div>
-        <p> 50% <span style={{fontSize:"x-small"}}>recommended </span></p>
+        <p> 97% <span style={{fontSize:"x-small"}}>recommended </span></p>
         </div>
         </div>
         <p>Often mentioned</p>

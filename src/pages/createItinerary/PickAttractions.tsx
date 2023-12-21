@@ -10,7 +10,13 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useState } from "react";
 
-export function PickAttractions () {
+type Attractions= {
+  attractionsIDs: number[]
+}
+type PickAttractionsProps = Attractions & {
+    updateFields: (fields: Partial<Attractions>) => void
+  }
+export function PickAttractions ({attractionsIDs, updateFields}: PickAttractionsProps) {
 
     const attractions = [
         {
@@ -37,13 +43,16 @@ export function PickAttractions () {
       const [selectedAttractions, setSelectedAttractions] = useState<number[]>([]);
 
       const toggleAttractionSelection = (attractionId: number) => {
-        if (selectedAttractions.includes(attractionId)) {
-          setSelectedAttractions((prevSelected) => prevSelected.filter((id) => id !== attractionId));
-        } else {
-          setSelectedAttractions((prevSelected) => [...prevSelected, attractionId]);
-        }
+        setSelectedAttractions((prevSelected) => {
+          if (prevSelected.includes(attractionId)) {
+            return prevSelected.filter((id) => id !== attractionId);
+          } else {
+            return [...prevSelected, attractionId];
+          }
+        });
+      
+        updateFields({ attractionsIDs: [...selectedAttractions, attractionId] });
       };
-    
     return (
 
         <Scaffold header= {<Header isRestaurant={false}/>}>
@@ -51,7 +60,7 @@ export function PickAttractions () {
         <h2 style={{ fontSize: "1em", marginBottom: "1rem" }}>Create itinerary<span style={{ fontSize: "0.8em" }}>- pick your attractions</span> </h2>
         <div style={{ display: 'flex', flexDirection:"column", justifyContent: 'space-around', marginTop: '20px' }}>
       {attractions.map((attraction) => (
-        <Card key={attraction.id} sx={{ maxWidth: 345 , marginTop: attraction.id !== 1 ? "2rem" : "0", backgroundColor:"inherit"}}>
+        <Card key={attraction.id} sx={{ maxWidth: 345 , marginTop: attraction.id !== 1 ? "2rem" : "0", backgroundColor:"#e6e2dd"}}>
           <CardMedia sx={{ height: 120 }} image={attraction.image} title={attraction.title} />
           <CardContent sx={{ paddingBottom: '0' }}>
             <Typography gutterBottom variant="h5" component="div">
@@ -72,8 +81,7 @@ export function PickAttractions () {
         </Card>
       ))}
     </div>
-    <Button onClick={()=>console.log(selectedAttractions.length)}> Clikke</Button>
-        </div>
+    </div>
         </Scaffold> 
 
     )
