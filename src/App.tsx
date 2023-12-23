@@ -7,7 +7,9 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import RestaurantInformationForm from './pages/restaurantInformation/RestaurantInformationForm';
+import UserInformationForm from './pages/userInformation/UserInformationForm';
 import { RestaurantInfoCompleted } from './pages/restaurantInformation/RestaurantInfoCompleted';
+import { UserInfoCompleted } from './pages/userInformation/UserInfoCompleted';
 import RestaurantHomePage from './pages/RestaurantHomePage';
 import { ItineraryInsights } from './pages/restaurantInformation/RestaurantItineraryInsights';
 import { CreateItineraryPage } from './pages/createItinerary/CreateItineraryPage';
@@ -36,6 +38,8 @@ function App() {
       {/* <Route path="/help" element={<HelpPage/>}/> */}
       <Route path="/restaurantsetup" element={<RestaurantInformationForm/>}/>
       <Route path="/restaurantsetupcompleted" element={<RestaurantInfoCompleted/>}/>
+      <Route path="/usersetup" element={<UserInformationForm/>}/>
+      <Route path="/usersetupcompleted" element={<UserInfoCompleted/>}/>
       <Route path="/itineraryinsights" element={<ItineraryInsights/>}/>
       <Route path="/createitinerary" element={<CreateItineraryPage/>}/>
       <Route path="/itinerarycreated" element={<ItineraryCreatedPage/>}/>
