@@ -11,7 +11,7 @@ export function ItineraryCreatedPage() {
         <RouteIcon/>
         <h2 style={{ textAlign: "center" }}>You are all set!</h2>
         <p style={{ textAlign: "center" }}>Congratulations! Your itinerary has been created, visit "my itineraries" to see details</p>
-        <Button style={{marginTop:"2rem"}}variant="contained" onClick={() => navigate("/")}>Go to my itineraries</Button>
+        <Button style={{marginTop:"2rem"}}variant="contained" onClick={() => navigate("/myitineraries")}>Go to my itineraries</Button>
         </div>
         </Scaffold>
        
