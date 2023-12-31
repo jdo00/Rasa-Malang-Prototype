@@ -14,6 +14,8 @@ import RestaurantHomePage from './pages/RestaurantHomePage';
 import { ItineraryInsights } from './pages/restaurantInformation/RestaurantItineraryInsights';
 import { CreateItineraryPage } from './pages/createItinerary/CreateItineraryPage';
 import { ItineraryCreatedPage } from './pages/createItinerary/ItineraryCreatedPage';
+import ItineraryOverview from './pages/myItineraries/ItineraryOverview';
+import ItineraryDetails from './pages/myItineraries/ItineraryDetails';
 
 
 
@@ -43,6 +45,8 @@ function App() {
       <Route path="/itineraryinsights" element={<ItineraryInsights/>}/>
       <Route path="/createitinerary" element={<CreateItineraryPage/>}/>
       <Route path="/itinerarycreated" element={<ItineraryCreatedPage/>}/>
+      <Route path="/myitineraries" element={<ItineraryOverview/>}/>
+      <Route path="/myitineraries/1" element={<ItineraryDetails/>}/>
     </Routes>
     </ThemeProvider>
   </BrowserRouter>
