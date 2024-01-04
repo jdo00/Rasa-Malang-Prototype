@@ -27,17 +27,17 @@ export function PickAttractions ({attractionsIDs, updateFields}: PickAttractions
         {
           id: 2,
           image: '/attractions/CulturCenter.jpeg',
-          title: 'Cultural Center Of East Java',
+          title: 'Cultural Center of East Java ',
         },
         {
           id: 3,
           image: '/attractions/KampungWarnaWarni.jpeg',
-          title: 'Kampug Warna Warni',
+          title: 'Kampung Warna Warni',
         },
         {
           id: 4,
           image: '/attractions/MalangNightParadise.jpeg',
-          title: 'Malang nigth paradise',
+          title: 'Malang Night Paradise.',
         },
       ];
       const [selectedAttractions, setSelectedAttractions] = useState<number[]>([]);

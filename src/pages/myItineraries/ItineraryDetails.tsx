@@ -39,7 +39,7 @@ export default function ItineraryDetails() {
             id: 1,
             stop1: true,
             image: '/PrototypeData/Restaurant/Bakwan_Subur_cabang_Panderman/Interior/mainPic.jpeg',
-            title: 'Bakwan Subur cabana Panderman',
+            title: 'Bakwan Subur Cabang Panderman',
             map: '/PrototypeData/Itinerary/Map_Stop1.png',
             walktime: '3 min walk',
         },
