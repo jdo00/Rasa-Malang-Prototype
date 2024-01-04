@@ -15,7 +15,7 @@ function ShowUpcoming() {
     {/* hardcoded Data for upcoming Itinerary */}
     const itinerary = {
         name: "Malang 1st day",
-        date: "18.01.2023",
+        date: "18.01.2024",
         image: "/attractions/BrawijayaMuseum.jpeg"
     }
     

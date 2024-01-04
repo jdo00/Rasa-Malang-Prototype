@@ -15,7 +15,7 @@ export default function ItineraryDetails() {
     {/* hardcoded Data for Itinerary */}
     const itinerary = {
         name: "Malang 1st day",
-        date: "18.01.2023"
+        date: "18.01.2024"
     }
 
     {/* hardcoded Data for Stop 1*/}
