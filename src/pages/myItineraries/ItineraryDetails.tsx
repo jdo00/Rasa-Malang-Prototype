@@ -30,7 +30,7 @@ export default function ItineraryDetails() {
             id: 2,
             stop1: false,
             image: '/attractions/CulturCenter.jpeg',
-            title: 'Cultural Center Of East Java'
+            title: 'Cultural Center of East Java'
         }
     ]
 
