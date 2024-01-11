@@ -12,6 +12,7 @@ type FormData = {
     age: string[]
     country: string[]
     travellerType: string[]
+    gender: string[]
     dietaryChips: ChipData[]
   }
   
@@ -21,6 +22,7 @@ type FormData = {
     age: [],
     country: [],
     travellerType: [],
+    gender: [],
     dietaryChips:[
         { key: 0, label: 'Vegetarian', focused: false },
         { key: 1, label: 'Vegan' , focused: false },

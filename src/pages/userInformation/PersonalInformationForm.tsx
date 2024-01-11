@@ -10,6 +10,10 @@ const TravellerType = [
   'family',
   'student'
 ]
+const Gender = [
+  'male',
+  'female'
+]
 const Age = [
   '18 to 24',
   '25 to 34',
@@ -28,6 +32,7 @@ type PersonalInformationData = {
     age: string[],
     country: string[],
     travellerType: string[],
+    gender: string[]
   }
 
   type PersonalInformationFormProps = PersonalInformationData & {
@@ -39,6 +44,7 @@ export function PersonalInformationForm ({
     age,
     country,
     travellerType,
+    gender,
     updateFields,
   }: PersonalInformationFormProps) {
     return (
@@ -79,8 +85,19 @@ export function PersonalInformationForm ({
           <MenuItem value={Country[2]}>USA</MenuItem>
         </Select>
         </FormControl>
-
-        <FormControl variant="filled" sx={{ minWidth: 368 }}>
+        <FormControl variant="filled" sx={{ minWidth: 120 }}>
+        <InputLabel id="demo-simple-select-filled-label">gender</InputLabel>
+        <Select
+          labelId="gender"
+          id="gender"
+          value={gender}
+          onChange={e => updateFields({ gender: e.target.value as string []})}
+        >
+          <MenuItem value={Gender[0]}>male</MenuItem>
+          <MenuItem value={Gender[1]}>female</MenuItem>
+        </Select>
+        </FormControl>
+        <FormControl variant="filled" sx={{ minWidth: 200 }}>
         <InputLabel id="demo-simple-select-filled-label">traveller type</InputLabel>
         <Select
           labelId="demo-simple-select-filled-label"
